@@ -16,8 +16,6 @@ const userDetail = ({ params }: { params: { uniqueId: string } }) => {
     return <p>User not Found</p>;
   }
 
-  console.log("lenght", orders);
-
   return (
     <div className="flex min-h-screen flex-col p-24">
       <h1 className="text-3xl font-semibold mb-4">Orders by User</h1>
