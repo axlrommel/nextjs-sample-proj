@@ -1,4 +1,4 @@
-import data from '@/mock/products.json';
+import data from "@/mock/products.json";
 
 const productDetail = ({ params }: { params: { productId: string } }) => {
   const product = data.find((item: any) => item.id === params.productId);
@@ -7,8 +7,8 @@ const productDetail = ({ params }: { params: { productId: string } }) => {
   }
 
   return (
-    <div className='flex min-h-screen flex-col p-24'>
-      <h1 className='text-2xl font-semibold'>Product Description</h1>
+    <div className="flex min-h-screen flex-col p-24">
+      <h1 className="text-2xl font-semibold">Product Description</h1>
       <h3 className={`mb-3 text-xl `}>{product.name}</h3>
       <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
         Price: {product.price}
